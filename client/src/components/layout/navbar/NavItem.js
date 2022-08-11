@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 const NavItem = ({title, url, icon}) => {
   return (
     <>
-       <Link to={url}>{icon} {title}</Link>
+       <Link to={url}> {icon} {title}</Link>
     </>
   )
 }

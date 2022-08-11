@@ -4,12 +4,12 @@ import NavItem from './NavItem'
 import {RiHomeHeartLine, RiUser6Line} from 'react-icons/ri'
 
 
-const Navbar = ({title, icon}) => {
+const Navbar = ({projectTitle, icon}) => {
 
   return (
     <div className='navbar bg-primary'>
         <h1 style={{display: 'flex', alignItems: 'center'}}>
-           {icon} {title}
+           {icon} {projectTitle}
         </h1>
         <ul>
             <NavItem title='Home' url='/' icon={<RiHomeHeartLine />}/>
@@ -20,13 +20,12 @@ const Navbar = ({title, icon}) => {
 }
 
 Navbar.propTypes = {
-    title: PropTypes.string.isRequired,
-    icon: PropTypes.string,
+    projectTitle: PropTypes.string.isRequired,
+    icon: PropTypes.object,
 }
 
 Navbar.defaultProps = {
-    title: 'Contact keeper',
-    icon: ''
+    projectTitle: 'Contact keeper'
 }
 
 export default Navbar
