@@ -1,5 +1,5 @@
 import React from 'react'
-import {RiMailOpenLine, RiPhoneLine} from 'react-icons/ri'
+import {RiMailOpenLine, RiPhoneLine, RiEdit2Line, RiDeleteBin3Line} from 'react-icons/ri'
 
 const ContactItem = ({contact}) => {
     const {id, name, email, phone, type} = contact;
@@ -21,6 +21,11 @@ const ContactItem = ({contact}) => {
               </li>
             )}
           </ul>
+          <div>
+          <button className='btn btn-light btn-sm'><RiEdit2Line /></button>
+          <button className='btn btn-light btn-sm' style={{color: 'tomato'}}><RiDeleteBin3Line /></button>
+
+          </div>
     </div>
   )
 }
